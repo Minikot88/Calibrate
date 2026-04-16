@@ -1,6 +1,10 @@
-﻿import React from 'react';
+﻿import React, { useEffect } from 'react';
 import logoImg from './photo/logo.png';
 import heroImg from './photo/HeroBanner.png';
+
+const BRAND_NAME = 'Hatyai Color Calibrate - HCC';
+const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61568043921605';
+const INSTAGRAM_URL = 'https://www.instagram.com/hatyaicolorcalibrate.hcc/';
 
 const navItems = [
   { label: 'บริการ', href: '#services' },
@@ -108,21 +112,57 @@ const confidenceNotes = [
 ];
 
 const contactItems = [
-  { label: 'Facebook Page', value: 'facebook.com/yourpage', href: 'https://facebook.com/yourpage' },
-  { label: 'Instagram', value: 'instagram.com/yourpage', href: 'https://instagram.com/yourpage' },
-  { label: 'Messenger', value: 'm.me/yourpage', href: 'https://m.me/yourpage' },
-  { label: 'เบอร์โทร', value: '080-000-0000', href: 'tel:0800000000' },
+  {
+    label: 'Facebook Page',
+    value: 'ติดต่อสอบถามและนัดคิวผ่านเพจได้เลย',
+    href: FACEBOOK_URL,
+  },
+  {
+    label: 'Instagram',
+    value: 'ติดตามผลงานและอัปเดตบริการของ HCC',
+    href: INSTAGRAM_URL,
+  },
 ];
 
 function App() {
+  useEffect(() => {
+    document.title = BRAND_NAME;
+
+    const upsertMeta = (selector, attrs) => {
+      let element = document.head.querySelector(selector);
+      if (!element) {
+        element = document.createElement('meta');
+        document.head.appendChild(element);
+      }
+      Object.entries(attrs).forEach(([key, value]) => {
+        element.setAttribute(key, value);
+      });
+    };
+
+    upsertMeta('meta[name="application-name"]', {
+      name: 'application-name',
+      content: BRAND_NAME,
+    });
+
+    upsertMeta('meta[property="og:title"]', {
+      property: 'og:title',
+      content: BRAND_NAME,
+    });
+
+    upsertMeta('meta[name="twitter:title"]', {
+      name: 'twitter:title',
+      content: BRAND_NAME,
+    });
+  }, []);
+
   return (
     <div className="site-shell">
       <header className="topbar">
         <div className="container topbar-inner">
           <a className="brand" href="#home">
-            <img className="brand-logo" src={logoImg} alt="Hatyai Color Calibrate" />
+            <img className="brand-logo" src={logoImg} alt={BRAND_NAME} />
             <span className="brand-text">
-              <strong>Hatyai Color Calibrate</strong>
+              <strong>{BRAND_NAME}</strong>
               <small>บริการคาลิเบรตหน้าจอในหาดใหญ่</small>
             </span>
           </a>
@@ -135,12 +175,7 @@ function App() {
             ))}
           </nav>
 
-          <a
-            className="button button-primary topbar-cta"
-            href="https://facebook.com/yourpage"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <a className="button button-primary topbar-cta" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
             ติดต่อผ่าน Facebook
           </a>
         </div>
@@ -158,10 +193,10 @@ function App() {
               </p>
 
               <div className="hero-actions">
-                <a className="button button-primary" href="https://facebook.com/yourpage" target="_blank" rel="noreferrer">
+                <a className="button button-primary" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
                   Facebook
                 </a>
-                <a className="button button-secondary" href="https://instagram.com/yourpage" target="_blank" rel="noreferrer">
+                <a className="button button-secondary" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
                   Instagram
                 </a>
                 <a className="button button-ghost" href="#pricing">
@@ -254,7 +289,7 @@ function App() {
                 <p className="promo-label">ข้อเสนอเด่น</p>
                 <h3>กลับมาคาลิเบรตอีกครั้งหลัง 3 เดือน ลด 50%</h3>
               </div>
-              <a className="button button-primary" href="https://facebook.com/yourpage" target="_blank" rel="noreferrer">
+              <a className="button button-primary" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
                 สอบถามโปรโมชัน
               </a>
             </div>
@@ -265,12 +300,7 @@ function App() {
                   <p className="price-title">{item.title}</p>
                   <div className="price-value">{item.price}</div>
                   <p className="price-detail">{item.detail}</p>
-                  <a
-                    className="button button-secondary button-full"
-                    href="https://facebook.com/yourpage"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
+                  <a className="button button-secondary button-full" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
                     ติดต่อเพื่อจองคิว
                   </a>
                 </article>
@@ -342,8 +372,8 @@ function App() {
               <p className="eyebrow">ติดต่อเรา</p>
               <h2>ทักแชทเพื่อสอบถามราคา นัดคิว และเช็กพื้นที่ให้บริการได้เลย</h2>
               <p>พร้อมให้บริการสำหรับลูกค้าในหาดใหญ่และพื้นที่ใกล้เคียง ทั้งงานเดี่ยว งานหลายจอ และงานสำหรับทีม</p>
-              <a className="button button-primary contact-primary" href="https://m.me/yourpage" target="_blank" rel="noreferrer">
-                จองคิว / สอบถามผ่าน Messenger
+              <a className="button button-primary contact-primary" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
+                จองคิว / ติดต่อผ่าน Facebook
               </a>
             </div>
 
@@ -362,23 +392,20 @@ function App() {
       <footer className="footer">
         <div className="container footer-inner">
           <div>
-            <strong>Hatyai Color Calibrate</strong>
+            <strong>{BRAND_NAME}</strong>
             <p>หาดใหญ่ ประเทศไทย</p>
           </div>
 
           <div className="footer-links">
-            <a href="https://facebook.com/yourpage" target="_blank" rel="noreferrer">
+            <a href={FACEBOOK_URL} target="_blank" rel="noreferrer">
               Facebook
             </a>
-            <a href="https://instagram.com/yourpage" target="_blank" rel="noreferrer">
+            <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
               Instagram
-            </a>
-            <a href="https://m.me/yourpage" target="_blank" rel="noreferrer">
-              Messenger
             </a>
           </div>
 
-          <p className="footer-copy">© 2026 Hatyai Color Calibrate</p>
+          <p className="footer-copy">© 2026 {BRAND_NAME}</p>
         </div>
       </footer>
     </div>
