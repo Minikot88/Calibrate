@@ -6,7 +6,7 @@ import logoImg from './photo/logo.png';
 
 const applyBrandAssets = () => {
   document.documentElement.lang = 'th';
-  document.title = 'Hatyai Color Calibrate - HCC';
+  document.title = 'คาลิเบรตหน้าจอ หาดใหญ่ | Hatyai Color Calibrate - HCC';
 
   const upsertLink = (selector, rel, href, type) => {
     let element = document.head.querySelector(selector);

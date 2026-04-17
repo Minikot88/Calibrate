@@ -7,26 +7,27 @@ import photo3 from './photo/photo3.webp';
 const BRAND_NAME = 'Hatyai Color Calibrate - HCC';
 const FACEBOOK_URL = 'https://www.facebook.com/profile.php?id=61568043921605';
 const INSTAGRAM_URL = 'https://www.instagram.com/hatyaicolorcalibrate.hcc/';
-const SITE_URL = 'https://yourdomain.com/';
+const DEFAULT_SITE_URL = 'https://yourdomain.com';
 const CALIBRATOR_NAME = 'Calibrite Display Plus HL';
-const PAGE_TITLE =
-  'คาลิเบรตหน้าจอ หาดใหญ่ | รับปรับสีจอคอม โน้ตบุ๊ก หลายจอ | Hatyai Color Calibrate - HCC';
+const PAGE_TITLE = 'คาลิเบรตหน้าจอ หาดใหญ่ | รับคาลิเบรตจอคอม โน้ตบุ๊ก และหลายจอ | HCC';
 const PAGE_DESCRIPTION =
-  'บริการคาลิเบรตหน้าจอในหาดใหญ่และใกล้เคียง ใช้ Calibrite Display Plus HL ปรับสีจอคอม โน้ตบุ๊ก และหลายจอให้ตรงขึ้น เหมาะกับงานแต่งภาพ กราฟิก วิดีโอ เกม และการใช้งานจริงทุกวัน';
+  'บริการคาลิเบรตหน้าจอในหาดใหญ่ สงขลา สำหรับจอคอม โน้ตบุ๊ก จอกราฟิก จอเกมมิ่ง และหลายจอ ใช้ Calibrite Display Plus HL ช่วยให้สีตรงขึ้น งานภาพมั่นใจขึ้น เริ่มต้น 490 บาท และนัดคิวง่ายผ่าน Facebook หรือ Instagram';
 
 const navItems = [
-  { label: 'บริการ', href: '#services' },
+  { label: 'คาลิเบรตคืออะไร', href: '#what-is-calibration' },
+  { label: 'เหมาะกับใคร', href: '#who-for' },
   { label: 'อุปกรณ์', href: '#equipment' },
-  { label: 'ขั้นตอน', href: '#process' },
   { label: 'ราคา', href: '#pricing' },
+  { label: 'พื้นที่บริการ', href: '#service-area' },
   { label: 'FAQ', href: '#faq' },
   { label: 'ติดต่อ', href: '#contact' },
 ];
 
 const heroHighlights = [
+  'เริ่มต้น 490 บาท',
   'รองรับ Windows / Mac',
-  'เหมาะกับจอเดียวถึงหลายจอ',
-  'รับงานในหาดใหญ่และใกล้เคียง',
+  'ใช้อุปกรณ์เฉพาะทาง',
+  'นัดคิวง่าย',
 ];
 
 const problemItems = [
@@ -61,6 +62,72 @@ const serviceItems = [
   'Windows / Mac',
 ];
 
+const answerItems = [
+  {
+    title: 'คาลิเบรตหน้าจอคืออะไร',
+    answer: 'คือการวัดและปรับค่าสี ความสว่าง และโทนภาพของหน้าจอให้ใกล้มาตรฐานมากขึ้น',
+    detail: 'เหมาะกับคนที่ต้องการให้สิ่งที่เห็นบนจอเชื่อถือได้มากกว่าการปรับด้วยตาอย่างเดียว',
+  },
+  {
+    title: 'คาลิเบรตหน้าจอช่วยอะไร',
+    answer: 'ช่วยให้สีตรงขึ้น จอหลายตัวใกล้กันมากขึ้น และทำงานภาพได้มั่นใจขึ้น',
+    detail: 'เหมาะทั้งกับงานกราฟิก วิดีโอ เกม และคนที่ใช้หน้าจอทำงานทุกวัน',
+  },
+  {
+    title: 'เหมาะกับใครบ้าง',
+    answer: 'เหมาะกับช่างภาพ ดีไซเนอร์ คนตัดต่อ เกมเมอร์ โปรแกรมเมอร์ และผู้ใช้หลายจอ',
+    detail: 'รวมถึงคนที่ใช้โน้ตบุ๊กหรือเจอปัญหาจอสีไม่ตรงกับงานจริง',
+  },
+  {
+    title: 'ใช้เวลานานไหม',
+    answer: 'โดยทั่วไปใช้เวลาไม่นาน ขึ้นอยู่กับจำนวนจอ รุ่นจอ และสภาพการตั้งค่าปัจจุบัน',
+    detail: 'หากมีหลายจอหรือใช้จอเฉพาะทาง อาจใช้เวลาเพิ่มขึ้นเล็กน้อยเพื่อให้ผลลัพธ์เสถียรขึ้น',
+  },
+  {
+    title: 'ราคาเริ่มต้นเท่าไร',
+    answer: 'ราคาเริ่มต้นที่ 490 บาทสำหรับ 1 จอ',
+    detail: 'มีแพ็กเกจสำหรับ 2 จอ 3 จอ และโน้ตบุ๊กร่วมกับจอนอก เพื่อให้เลือกตามการใช้งานจริงได้ง่าย',
+  },
+  {
+    title: 'รองรับจอแบบไหน',
+    answer: 'รองรับจอคอม โน้ตบุ๊ก จอกราฟิก จอเกมมิ่ง และจอสมัยใหม่หลายประเภท',
+    detail: 'รวมถึง LCD, IPS, OLED และ Mini-LED ตามความเหมาะสมของแต่ละรุ่น',
+  },
+  {
+    title: 'ใช้กับ Windows / Mac ได้ไหม',
+    answer: 'ได้ รองรับทั้ง Windows และ Mac รวมถึงการใช้งานกับจอภายนอก',
+    detail: 'เหมาะกับทั้งผู้ใช้ที่มีจอเดียวและคนที่ทำงานแบบหลายหน้าจอ',
+  },
+  {
+    title: 'MacBook คาลิเบรตได้ไหม',
+    answer: 'ได้ สามารถคาลิเบรต MacBook และโน้ตบุ๊กที่ใช้ทำงานร่วมกับจอภายนอกได้',
+    detail: 'เหมาะกับคนที่ต้องการให้สีบนโน้ตบุ๊กและจอเสริมใกล้กันมากขึ้นในการใช้งานจริง',
+  },
+  {
+    title: 'ต้องทำทุกกี่เดือน',
+    answer: 'แนะนำทุกประมาณ 3 เดือน หรือเมื่อเปลี่ยนแสง เปลี่ยนจอ หรือเปลี่ยนอุปกรณ์',
+    detail: 'สำหรับคนทำงานสีจริงจังหรือใช้หน้าจอทุกวัน การคาลิเบรตเป็นระยะจะช่วยให้ผลลัพธ์นิ่งกว่าเดิม',
+  },
+  {
+    title: 'จอหลายจอสีไม่เท่ากันช่วยได้ไหม',
+    answer: 'ช่วยได้ เพราะการคาลิเบรตทำให้แต่ละจอมีแนวทางการแสดงผลใกล้กันมากขึ้น',
+    detail: 'แม้จะแก้ความต่างของพาแนลไม่ได้ทั้งหมด แต่ช่วยลดความเพี้ยนที่เห็นได้ชัดในการใช้งานจริง',
+  },
+];
+
+const audienceItems = [
+  'ช่างภาพและครีเอเตอร์ที่ต้องการให้สีไฟล์เชื่อถือได้มากขึ้น',
+  'นักออกแบบและคนตัดต่อที่ต้องทำงานข้ามหลายจอ',
+  'เกมเมอร์หรือผู้ใช้ทั่วไปที่อยากให้จอมองสบายและสมดุลขึ้น',
+  'ผู้ใช้โน้ตบุ๊กและจอนอกที่ต้องการให้สีใกล้กันมากขึ้น',
+];
+
+const serviceAreaItems = [
+  'หาดใหญ่',
+  'สงขลา',
+  'พื้นที่ใกล้เคียงในภาคใต้ตอนล่างตามการนัดหมาย',
+];
+
 const specItems = [
   'วัดความสว่างได้สูงสุด 10,000 nits',
   'รองรับหน้าจอ LCD / IPS / OLED / Mini-LED',
@@ -86,6 +153,47 @@ const outcomeItems = [
   'ใช้งานทุกวันสบายตาขึ้น',
   'ลดปัญหาสีเพี้ยนจากการตั้งค่าด้วยตา',
   'เหมาะกับทั้งผู้ใช้ทั่วไปและผู้ใช้มืออาชีพ',
+];
+
+const uspItems = [
+  {
+    title: 'ใช้อุปกรณ์เฉพาะทาง ไม่ใช่ปรับด้วยตา',
+    description: 'ใช้เครื่องมือคาลิเบรตจริงเพื่อวัดสีและความสว่าง ช่วยให้ผลลัพธ์แม่นยำกว่าเดาเอง',
+  },
+  {
+    title: 'สีตรงขึ้น ทำงานมั่นใจขึ้น',
+    description: 'เหมาะกับแต่งภาพ ออกแบบ ตัดต่อ งานคอนเทนต์ และทุกงานที่ต้องการความแม่นยำของสีมากขึ้น',
+  },
+  {
+    title: 'หลายจอสีใกล้กันมากขึ้น',
+    description: 'เหมาะกับคนใช้ 2-3 จอ หรือ notebook + monitor ที่ต้องการให้ภาพรวมของสีทำงานต่อกันได้ง่ายขึ้น',
+  },
+  {
+    title: 'ใช้งานสบายตาขึ้น',
+    description: 'ช่วยลดโทนสีเพี้ยน ความสว่างไม่สมดุล และความไม่สบายตาจากจอที่ตั้งค่าไม่เหมาะสม',
+  },
+  {
+    title: 'เริ่มต้นเข้าถึงง่าย',
+    description: 'ราคาเริ่มต้นเพียง 490 บาท เลือกแพ็กเกจได้ตามจำนวนจอและลักษณะการใช้งานจริง',
+  },
+  {
+    title: 'อยู่หาดใหญ่ นัดง่าย พร้อมใช้งานต่อได้',
+    description: 'เหมาะกับลูกค้าในหาดใหญ่ สงขลา และใกล้เคียง ใช้เวลาไม่นานและทำเสร็จพร้อมใช้งานต่อได้เลย',
+  },
+];
+
+const reassuranceItems = [
+  'ทักมาสอบถามก่อนได้ ไม่มีค่าใช้จ่าย',
+  'แจ้งรุ่นจอเพื่อประเมินเบื้องต้นได้',
+  'เหมาะทั้งมืออาชีพและใช้งานทั่วไป',
+  'ให้คำแนะนำหลังคาลิเบรตเบื้องต้น',
+];
+
+const searchIntentLinks = [
+  { label: 'คาลิเบรตหน้าจอคืออะไร', href: '#what-is-calibration' },
+  { label: 'คาลิเบรตจอราคาเท่าไร', href: '#pricing' },
+  { label: 'จอหลายจอสีไม่เท่ากัน', href: '#process' },
+  { label: 'คาลิเบรตจอ หาดใหญ่', href: '#service-area' },
 ];
 
 const processItems = [
@@ -114,61 +222,58 @@ const processItems = [
 const pricingItems = [
   {
     title: '1 จอ',
-    price: '690 บาท',
-    detail: 'เหมาะกับจอหลักที่ต้องการสีตรงขึ้นและใช้งานมั่นใจขึ้นทันที',
+    price: '490 บาท',
+    detail: 'เหมาะสำหรับผู้ที่ต้องการคาลิเบรตหน้าจอหลัก 1 จอ เพื่อให้สีตรงและใช้งานได้มั่นใจขึ้น',
+    tag: 'ราคาเริ่มต้น',
   },
   {
     title: '2 จอ',
-    price: '1,190 บาท',
-    detail: 'เหมาะกับผู้ใช้จอคู่ที่ต้องการให้สีใกล้กันมากขึ้น',
+    price: '890 บาท',
+    detail: 'เหมาะสำหรับผู้ที่ใช้งาน 2 จอ และต้องการให้สีใกล้เคียงกันมากขึ้นในการทำงาน',
     featured: true,
+    tag: 'แนะนำ',
   },
   {
     title: '3 จอ',
-    price: '1,590 บาท',
-    detail: 'ตอบโจทย์ผู้ใช้หลายจอที่ต้องการภาพรวมสีสมดุลขึ้น',
+    price: '1,290 บาท',
+    detail: 'คุ้มค่าสำหรับผู้ที่ใช้งานหลายจอ และต้องการความสม่ำเสมอของสีระหว่างจอ',
   },
   {
     title: 'Notebook + จอนอก',
-    price: '990 บาท',
-    detail: 'เหมาะกับโต๊ะทำงานที่ใช้โน้ตบุ๊กร่วมกับจอเสริม',
+    price: '790 บาท',
+    detail: 'เหมาะสำหรับผู้ที่ใช้โน้ตบุ๊กต่อจอนอก และต้องการให้ทั้งสองจอแสดงผลใกล้เคียงกัน',
   },
   {
-    title: 'งานหลายเครื่อง / บริษัท',
+    title: 'งานหลายจอ / บริษัท',
     price: 'สอบถามราคา',
-    detail: 'สำหรับทีมงาน ออฟฟิศ หรืออุปกรณ์หลายชุดที่ต้องการนัดบริการรวม',
+    detail: 'สำหรับงานที่มีหลายจอหรือใช้งานในบริษัท สามารถสอบถามราคาเพิ่มเติมตามจำนวนและลักษณะงาน',
   },
 ];
 
 const confidenceItems = [
-  'ใช้ Calibrite Display Plus HL',
-  'เหมาะกับจอคอมและโน้ตบุ๊ก',
-  'รองรับหลายจอ',
-  'เหมาะกับงานสีจริง',
-  'รับงานในหาดใหญ่และใกล้เคียง',
-  'นัดหมายสะดวก',
-];
-
-const aeoItems = [
   {
-    title: 'คาลิเบรตหน้าจอคืออะไร',
-    description: 'การปรับค่าสี ความสว่าง และโทนภาพของหน้าจอให้ใกล้มาตรฐานมากขึ้น',
+    title: 'ใช้ Calibrite Display Plus HL',
+    description: 'ใช้อุปกรณ์คาลิเบรตหน้าจอเฉพาะทางสำหรับตรวจวัดจริง ไม่ใช่การลองปรับด้วยตาเพียงอย่างเดียว',
   },
   {
-    title: 'ทำไมจอแต่ละตัวสีไม่เท่ากัน',
-    description: 'เพราะพาแนล การตั้งค่า อายุจอ และสภาพแสงที่ใช้งานต่างกัน',
+    title: 'รองรับ Windows / Mac และหลายประเภทจอ',
+    description: 'เหมาะกับจอ LCD, IPS, OLED, Mini-LED รวมถึงโน้ตบุ๊ก จอคอม และหลายจอในชุดเดียวกัน',
   },
   {
-    title: 'คาลิเบรตแล้วได้อะไร',
-    description: 'ช่วยให้สีตรงขึ้น ใช้งานมั่นใจขึ้น และลดปัญหาสีเพี้ยนระหว่างหลายจอ',
+    title: 'เหมาะทั้งงานภาพและใช้งานทั่วไป',
+    description: 'ไม่จำเป็นต้องเป็นช่างภาพก็ใช้บริการได้ หากอยากให้หน้าจอสมดุลขึ้นและมองสบายขึ้น',
   },
   {
-    title: 'ควรทำทุกกี่เดือน',
-    description: 'แนะนำทุก 3 เดือน หรือเมื่อเปลี่ยนแสง เปลี่ยนจอ หรือเปลี่ยนอุปกรณ์',
+    title: 'มีแพ็กเกจหลายแบบ เริ่มต้นเข้าถึงง่าย',
+    description: 'เริ่มต้นเพียง 490 บาท และมีตัวเลือกสำหรับจอคู่ หลายจอ หรือ notebook + จอนอก',
   },
   {
-    title: 'ใช้เครื่องอะไร',
-    description: `ใช้ ${CALIBRATOR_NAME} เครื่องคาลิเบรตหน้าจอระดับมืออาชีพ`,
+    title: 'บริการในหาดใหญ่ นัดคิวสะดวก',
+    description: 'เหมาะกับลูกค้าในหาดใหญ่ สงขลา และพื้นที่ใกล้เคียง สามารถทักมาคุยรายละเอียดก่อนได้',
+  },
+  {
+    title: 'ให้คำแนะนำหลังคาลิเบรตเบื้องต้น',
+    description: 'ช่วยให้เข้าใจการใช้งานหลังคาลิเบรตมากขึ้นและหยิบไปใช้งานต่อได้อย่างมั่นใจ',
   },
 ];
 
@@ -176,59 +281,112 @@ const faqItems = [
   {
     question: 'คาลิเบรตหน้าจอคืออะไร',
     answer:
-      'คือการปรับค่าสี ความสว่าง และโทนภาพของหน้าจอให้ใกล้มาตรฐานมากขึ้น เพื่อให้ภาพที่เห็นน่าเชื่อถือขึ้น',
+      'คือการวัดและปรับค่าสี ความสว่าง และโทนภาพของหน้าจอให้ใกล้มาตรฐานมากขึ้น เพื่อให้สิ่งที่เห็นบนจอเชื่อถือได้กว่าเดิม',
   },
   {
-    question: 'ทำไมจอแต่ละตัวสีไม่เหมือนกัน',
+    question: 'ทำไมจอแต่ละเครื่องสีไม่เหมือนกัน',
     answer:
-      'เพราะพาแนล การตั้งค่า อายุจอ และกระบวนการผลิตของแต่ละรุ่นต่างกัน จึงทำให้สีและแสงไม่เหมือนกัน',
+      'เพราะพาแนล การตั้งค่า อายุจอ ความสว่าง และสภาพแสงรอบตัวต่างกัน แม้เป็นจอรุ่นเดียวกันก็อาจให้สีไม่เหมือนกันได้',
   },
   {
-    question: 'คาลิเบรตแล้วเห็นผลไหม',
-    answer: 'โดยทั่วไปจะช่วยให้สีตรงขึ้น ภาพนิ่งขึ้น และทำงานข้ามหลายจอได้มั่นใจมากขึ้น',
+    question: 'คาลิเบรตหน้าจอช่วยอะไร',
+    answer:
+      'ช่วยให้สีตรงขึ้น ภาพนิ่งขึ้น และลดความต่างระหว่างหลายจอ ทำให้แต่งภาพ ออกแบบ ตัดต่อ หรือทำงานประจำวันได้มั่นใจขึ้น',
+  },
+  {
+    question: 'เหมาะกับงานประเภทไหน',
+    answer:
+      'เหมาะกับงานภาพถ่าย กราฟิก วิดีโอ งานคอนเทนต์ เกม และงานทั่วไปที่ต้องการให้จอสมดุลและเชื่อถือได้มากขึ้น',
   },
   {
     question: 'ใช้เวลานานแค่ไหน',
-    answer: 'ส่วนใหญ่ใช้เวลาไม่นาน ขึ้นอยู่กับจำนวนจอ รุ่นหน้าจอ และสภาพการใช้งานจริง',
+    answer:
+      'โดยทั่วไปใช้เวลาไม่นาน ขึ้นอยู่กับจำนวนจอ รุ่นของหน้าจอ และค่าการใช้งานเดิมของแต่ละเครื่อง',
   },
   {
     question: 'ใช้ได้กับ Windows และ Mac ไหม',
-    answer: 'ได้ รองรับทั้ง Windows และ Mac รวมถึงโน้ตบุ๊กและจอภายนอก',
+    answer:
+      'ได้ รองรับทั้ง Windows และ Mac รวมถึงการทำงานร่วมกับจอภายนอกและชุดหลายจอ',
   },
   {
-    question: 'ถ้ามี 2-3 จอ ควรทำพร้อมกันไหม',
-    answer: 'ควร เพราะจะช่วยให้แต่ละจอมีโทนสีใกล้กันมากขึ้นและใช้งานต่อเนื่องได้สบายกว่าเดิม',
+    question: 'MacBook คาลิเบรตได้ไหม',
+    answer:
+      'ได้ สามารถคาลิเบรต MacBook และโน้ตบุ๊กที่ใช้ร่วมกับจอภายนอกได้ เพื่อให้สีใกล้กันมากขึ้นและใช้งานต่อเนื่องได้สบายกว่าเดิม',
+  },
+  {
+    question: 'โน้ตบุ๊กคาลิเบรตได้ไหม',
+    answer:
+      'ได้ เหมาะกับทั้งโน้ตบุ๊กเดี่ยวและโน้ตบุ๊กร่วมกับจอนอก โดยเฉพาะคนที่ทำงานนอกสถานที่หรือสลับโต๊ะทำงานบ่อย',
   },
   {
     question: 'จอเกมมิ่งคาลิเบรตได้ไหม',
-    answer: 'ได้ สามารถช่วยให้สีสมดุลขึ้นและมองสบายตาขึ้นทั้งเล่นเกมและทำงาน',
+    answer:
+      'ได้ การคาลิเบรตช่วยให้สีและความสว่างสมดุลขึ้น มองสบายขึ้น และช่วยให้จอดูเป็นธรรมชาติกว่าการปรับด้วยตาอย่างเดียว',
   },
   {
-    question: 'โน้ตบุ๊กทำได้ไหม',
-    answer: 'ได้ เหมาะกับทั้งโน้ตบุ๊กเดี่ยวและโน้ตบุ๊กร่วมกับจอภายนอก',
+    question: 'จอหลายจอสีไม่เท่ากันแก้ได้ไหม',
+    answer:
+      'ช่วยได้มาก เพราะการคาลิเบรตทำให้แต่ละจอมีแนวทางการแสดงผลใกล้กันขึ้น แม้จะไม่ลบข้อจำกัดของพาแนลทั้งหมดก็ตาม',
   },
   {
-    question: 'รับงานนอกสถานที่ไหม',
-    answer: 'รับงานในหาดใหญ่และพื้นที่ใกล้เคียง สามารถทักมาสอบถามพื้นที่และคิวได้',
+    question: 'ต้องคาลิเบรตทุกกี่เดือน',
+    answer:
+      'แนะนำทุกประมาณ 3 เดือน หรือเมื่อเปลี่ยนแสง เปลี่ยนจอ เปลี่ยนอุปกรณ์ หรือเริ่มรู้สึกว่าสีไม่เหมือนเดิม',
+  },
+  {
+    question: 'หลังคาลิเบรตแล้วได้อะไร',
+    answer:
+      'จะได้หน้าจอที่สีตรงขึ้น ใช้งานมั่นใจขึ้น และมีโปรไฟล์สีที่เหมาะกับจอนั้นมากขึ้น ทำให้ทำงานต่อได้ง่ายกว่าเดิม',
   },
   {
     question: 'ใช้อุปกรณ์อะไรในการคาลิเบรต',
-    answer: `เราใช้ ${CALIBRATOR_NAME} สำหรับตรวจวัดและปรับค่าสี ความสว่าง และโทนภาพอย่างแม่นยำ`,
+    answer:
+      `เราใช้ ${CALIBRATOR_NAME} สำหรับตรวจวัดและปรับค่าสี ความสว่าง และโทนภาพของหน้าจออย่างแม่นยำกว่าการตั้งค่าด้วยตา`,
   },
   {
-    question: 'Calibrite Display Plus HL ดีอย่างไร',
+    question: 'Calibrite Display Plus HL คืออะไร',
     answer:
-      'เหมาะกับจอสมัยใหม่และจอความสว่างสูง ช่วยให้วัดค่าได้แม่นยำกว่าการตั้งค่าด้วยตา และรองรับหลายจอได้ดี',
+      'เป็นเครื่องคาลิเบรตหน้าจอระดับมืออาชีพที่รองรับจอสมัยใหม่และจอความสว่างสูง ช่วยให้การวัดสีและการสร้างโปรไฟล์สีแม่นยำขึ้น',
+  },
+  {
+    question: 'ต้องนำเครื่องไปเองไหม',
+    answer:
+      'โดยทั่วไปเป็นการนัดบริการตามพื้นที่ให้บริการในหาดใหญ่ สงขลา และใกล้เคียง สามารถทักมาสอบถามรูปแบบการนัดได้ก่อน',
+  },
+  {
+    question: 'ราคาเริ่มต้นเท่าไร',
+    answer:
+      'ราคาเริ่มต้นอยู่ที่ 490 บาทสำหรับ 1 จอ และมีแพ็กเกจสำหรับ 2 จอ 3 จอ รวมถึงโน้ตบุ๊กร่วมกับจอนอก',
+  },
+  {
+    question: 'คนทั่วไปจำเป็นต้องทำไหม',
+    answer:
+      'ถ้าใช้งานที่เกี่ยวกับสี ใช้หลายจอ หรือรู้สึกว่าจอแสดงผลไม่สมดุล การคาลิเบรตก็มีประโยชน์มาก แต่คนทั่วไปที่อยากให้จอใช้งานสบายขึ้นก็ทำได้เช่นกัน',
+  },
+  {
+    question: 'ต่างจากการปรับสีด้วยตาอย่างไร',
+    answer:
+      'การปรับด้วยตาอาศัยความรู้สึกส่วนตัวและสภาพแสงรอบตัว แต่การคาลิเบรตใช้เครื่องวัดจริง จึงให้ผลที่สม่ำเสมอและเชื่อถือได้มากกว่า',
   },
   {
     question: 'นัดคิวยังไง',
-    answer: 'ทักแชทผ่าน Facebook หรือ Instagram เพื่อสอบถามราคา นัดคิว และแจ้งจำนวนจอที่ต้องการคาลิเบรตได้เลย',
+    answer:
+      'ทักแชทผ่าน Facebook หรือ Instagram เพื่อสอบถามราคา นัดคิว และแจ้งจำนวนจอที่ต้องการคาลิเบรตได้เลย',
+  },
+  {
+    question: 'ต้องนัดคิวไหม',
+    answer:
+      'แนะนำให้นัดคิวก่อน เพื่อแจ้งรุ่นจอ จำนวนจอ และช่วงเวลาที่สะดวก จะช่วยให้ประเมินงานและจัดคิวได้ง่ายขึ้น',
   },
 ];
 
 function App() {
   const [openFaq, setOpenFaq] = useState(0);
   const [menuOpen, setMenuOpen] = useState(false);
+  const siteUrl = useMemo(
+    () => (typeof window !== 'undefined' ? window.location.origin : DEFAULT_SITE_URL),
+    [],
+  );
 
   const structuredData = useMemo(
     () => ({
@@ -236,25 +394,45 @@ function App() {
       '@graph': [
         {
           '@type': 'LocalBusiness',
-          '@id': `${SITE_URL}#localbusiness`,
+          '@id': `${siteUrl}/#localbusiness`,
           name: BRAND_NAME,
-          url: SITE_URL,
+          url: `${siteUrl}/`,
           image: [photo1, photo2, photo3, logoImg],
           description: PAGE_DESCRIPTION,
+          priceRange: '฿490+',
+          address: {
+            '@type': 'PostalAddress',
+            addressLocality: 'Hat Yai',
+            addressRegion: 'Songkhla',
+            addressCountry: 'TH',
+          },
           areaServed: [
             { '@type': 'City', name: 'Hat Yai' },
+            { '@type': 'AdministrativeArea', name: 'Songkhla' },
             { '@type': 'Country', name: 'Thailand' },
           ],
           sameAs: [FACEBOOK_URL, INSTAGRAM_URL],
         },
         {
+          '@type': 'ProfessionalService',
+          '@id': `${siteUrl}/#professional-service`,
+          name: BRAND_NAME,
+          url: `${siteUrl}/`,
+          description:
+            'บริการคาลิเบรตหน้าจอในหาดใหญ่และสงขลา สำหรับจอคอม โน้ตบุ๊ก จอกราฟิก และหลายจอ โดยใช้ Calibrite Display Plus HL',
+          areaServed: [
+            { '@type': 'City', name: 'Hat Yai' },
+            { '@type': 'AdministrativeArea', name: 'Songkhla' },
+          ],
+          sameAs: [FACEBOOK_URL, INSTAGRAM_URL],
+        },
+        {
           '@type': 'Service',
-          '@id': `${SITE_URL}#service`,
-          name: 'บริการคาลิเบรตหน้าจอคอมและโน้ตบุ๊ก',
+          '@id': `${siteUrl}/#service`,
+          name: 'บริการคาลิเบรตจอคอม จอโน้ตบุ๊ก และหลายจอในหาดใหญ่',
           serviceType: 'Monitor Calibration',
           provider: {
-            '@type': 'LocalBusiness',
-            name: BRAND_NAME,
+            '@id': `${siteUrl}/#localbusiness`,
           },
           areaServed: {
             '@type': 'City',
@@ -265,7 +443,7 @@ function App() {
         },
         {
           '@type': 'FAQPage',
-          '@id': `${SITE_URL}#faq`,
+          '@id': `${siteUrl}/#faq`,
           mainEntity: faqItems.map((item) => ({
             '@type': 'Question',
             name: item.question,
@@ -277,7 +455,7 @@ function App() {
         },
       ],
     }),
-    [],
+    [siteUrl],
   );
 
   useEffect(() => {
@@ -309,6 +487,10 @@ function App() {
       name: 'application-name',
       content: BRAND_NAME,
     });
+    upsertMeta('meta[name="robots"]', {
+      name: 'robots',
+      content: 'index, follow, max-image-preview:large',
+    });
     upsertMeta('meta[name="description"]', {
       name: 'description',
       content: PAGE_DESCRIPTION,
@@ -316,7 +498,7 @@ function App() {
     upsertMeta('meta[name="keywords"]', {
       name: 'keywords',
       content:
-        'คาลิเบรตหน้าจอ หาดใหญ่, รับคาลิเบรตจอ หาดใหญ่, ปรับสีจอ หาดใหญ่, Calibrite Display Plus HL, เครื่องคาลิเบรตหน้าจอ, คาลิเบรตจอคอม, หลายจอ สีไม่เท่ากัน',
+        'คาลิเบรตหน้าจอ หาดใหญ่, คาลิเบรตจอ หาดใหญ่, รับคาลิเบรตจอ หาดใหญ่, ปรับสีจอ หาดใหญ่, คาลิเบรตจอคอม หาดใหญ่, คาลิเบรตจอโน้ตบุ๊ก หาดใหญ่, monitor calibration hatyai, screen calibration hatyai',
     });
     upsertMeta('meta[property="og:title"]', {
       property: 'og:title',
@@ -330,9 +512,13 @@ function App() {
       property: 'og:type',
       content: 'website',
     });
+    upsertMeta('meta[property="og:locale"]', {
+      property: 'og:locale',
+      content: 'th_TH',
+    });
     upsertMeta('meta[property="og:url"]', {
       property: 'og:url',
-      content: SITE_URL,
+      content: `${siteUrl}/`,
     });
     upsertMeta('meta[property="og:image"]', {
       property: 'og:image',
@@ -356,7 +542,7 @@ function App() {
     });
     upsertLink('link[rel="canonical"]', {
       rel: 'canonical',
-      href: SITE_URL,
+      href: `${siteUrl}/`,
     });
 
     let script = document.getElementById('structured-data-hcc');
@@ -374,7 +560,7 @@ function App() {
         currentScript.textContent = '';
       }
     };
-  }, [structuredData]);
+  }, [siteUrl, structuredData]);
 
   useEffect(() => {
     const nodes = document.querySelectorAll('.reveal');
@@ -440,12 +626,12 @@ function App() {
         <section className="hero section" id="home">
           <div className="container hero-grid">
             <div className="hero-copy reveal reveal-visible">
-              <p className="eyebrow">Hatyai Color Calibrate - HCC</p>
-              <div className="hero-badge">คาลิเบรตรอบถัดไปหลัง 3 เดือน ลด 50%</div>
-              <h1>บริการคาลิเบรตหน้าจอในหาดใหญ่</h1>
+              <p className="eyebrow">บริการคาลิเบรตหน้าจอ หาดใหญ่</p>
+              <div className="hero-badge">โปรโมชั่น คาลิเบรตรอบถัดไปหลัง 3 เดือน ลด 50% 1 ครั้ง</div>
+              <h1>บริการคาลิเบรตหน้าจอในหาดใหญ่ สีตรงขึ้น ใช้งานมั่นใจขึ้น</h1>
               <p className="hero-description">
-                ปรับสีหน้าจอคอมและโน้ตบุ๊กให้ตรงขึ้น ใช้งานสบายตา เหมาะกับงานแต่งภาพ กราฟิก วิดีโอ เกม
-                และการใช้งานหลายจอ
+                เหมาะกับจอคอม โน้ตบุ๊ก จอแต่งภาพ จอหลายจอ และผู้ที่ต้องการสีแม่นยำมากขึ้น เริ่มต้นเพียง
+                490 บาท ใช้อุปกรณ์เฉพาะทางและนัดคิวง่ายในหาดใหญ่
               </p>
 
               <div className="hero-actions">
@@ -456,8 +642,25 @@ function App() {
                   ดูราคา
                 </a>
                 <a className="button button-secondary" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
-                  Instagram
+                  ติดต่อผ่าน Instagram
                 </a>
+              </div>
+
+              <div className="hero-note-list">
+                {reassuranceItems.slice(0, 3).map((item) => (
+                  <p className="hero-note" key={item}>
+                    <span className="hero-note-dot" aria-hidden="true" />
+                    {item}
+                  </p>
+                ))}
+              </div>
+
+              <div className="hero-topic-links" aria-label="หัวข้อสำคัญบนหน้านี้">
+                {searchIntentLinks.map((item) => (
+                  <a className="topic-link" key={item.href} href={item.href}>
+                    {item.label}
+                  </a>
+                ))}
               </div>
 
               <div className="hero-highlights">
@@ -472,23 +675,27 @@ function App() {
 
             <aside className="hero-media reveal reveal-delay-1">
               <div className="hero-visual-frame">
-                <img src={photo1} alt="บรรยากาศบริการคาลิเบรตหน้าจอ" className="hero-image" />
+                <img
+                  src={photo1}
+                  alt="บริการคาลิเบรตหน้าจอในหาดใหญ่สำหรับจอคอมและโน้ตบุ๊ก"
+                  className="hero-image"
+                />
                 <div className="hero-floating-card">
                   <span className="section-kicker">ใช้อุปกรณ์เฉพาะทาง</span>
                   <strong>{CALIBRATOR_NAME}</strong>
-                  <p>ช่วยให้สีจอตรงขึ้น สม่ำเสมอขึ้น และใช้งานมั่นใจขึ้น</p>
+                  <p>ช่วยให้สีจอตรงขึ้น สม่ำเสมอขึ้น และเหมาะกับการทำงานที่ต้องการความแม่นยำมากขึ้น</p>
                 </div>
               </div>
             </aside>
           </div>
         </section>
 
-        <section className="section section-soft" id="problems">
+        <section className="section section-soft" id="what-is-calibration">
           <div className="container reveal">
             <div className="section-heading">
-              <p className="eyebrow">ปัญหาที่ลูกค้าเจอ</p>
-              <h2>เมื่อสีจอไม่ตรง งานก็ช้าลงและตัดสินใจได้ยากขึ้น</h2>
-              <p>บริการคาลิเบรตช่วยลดความคลาดเคลื่อนของสี ทำให้ภาพบนจอนิ่งขึ้นและใช้งานสบายขึ้น</p>
+              <p className="eyebrow">คาลิเบรตหน้าจอคืออะไร</p>
+              <h2>คาลิเบรตหน้าจอคือการปรับสีและความสว่างของจอให้ใกล้มาตรฐานมากขึ้น</h2>
+              <p>เมื่อจอแสดงผลไม่แม่น งานภาพจะตัดสินใจยากขึ้น สีหลายจอจะไม่ตรงกัน และการใช้งานประจำวันอาจไม่สบายตาเท่าที่ควร</p>
             </div>
 
             <div className="problem-grid compact-grid">
@@ -505,9 +712,9 @@ function App() {
         <section className="section" id="services">
           <div className="container reveal">
             <div className="section-heading">
-              <p className="eyebrow">บริการของเรา</p>
-              <h2>รองรับตั้งแต่จอเดียวไปจนถึงหลายจอ</h2>
-              <p>เหมาะกับงานภาพ งานกราฟิก วิดีโอ เกม และผู้ใช้ที่ต้องการให้สีหน้าจอสม่ำเสมอขึ้น</p>
+              <p className="eyebrow">ทำไมคาลิเบรตหน้าจอจึงสำคัญ</p>
+              <h2>ช่วยให้สีจอตรงขึ้น งานภาพมั่นใจขึ้น และหลายจอทำงานต่อกันได้ง่ายขึ้น</h2>
+              <p>รองรับทั้งจอคอม โน้ตบุ๊ก จอเกมมิ่ง และหลายจอ เหมาะกับทั้งงานสีจริงและการใช้งานทั่วไปที่อยากให้จอสมดุลขึ้น</p>
             </div>
 
             <div className="service-grid compact-grid">
@@ -519,6 +726,61 @@ function App() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="section section-soft" id="answers">
+          <div className="container reveal">
+            <div className="section-heading">
+              <p className="eyebrow">คำตอบที่คนค้นหาบ่อย</p>
+              <h2>ตอบตรงทั้งเรื่องราคา เวลา อุปกรณ์ และการรองรับจอแต่ละแบบ</h2>
+              <p>ช่วยให้ทั้งคนอ่านจริงและระบบค้นหาเข้าใจบริการได้เร็ว โดยไม่ต้องเลื่อนหาเนื้อหายาวเกินจำเป็น</p>
+            </div>
+
+            <div className="answer-grid answer-grid-wide">
+              {answerItems.map((item, index) => (
+                <article className={`answer-card reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
+                  <h3>{item.title}</h3>
+                  <p className="answer-strong">{item.answer}</p>
+                  <p>{item.detail}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="section" id="who-for">
+          <div className="container audience-shell reveal">
+            <article className="audience-panel">
+              <div className="section-heading compact-heading">
+                <p className="eyebrow">เหมาะกับใครบ้าง</p>
+                <h2>เหมาะกับคนที่ต้องพึ่งพาสีหน้าจอในงานจริง</h2>
+                <p>โดยเฉพาะคนที่ใช้หลายจอ ใช้โน้ตบุ๊กร่วมกับจอนอก หรืออยากให้หน้าจอแสดงผลเชื่อถือได้มากขึ้น</p>
+              </div>
+              <div className="audience-list">
+                {audienceItems.map((item) => (
+                  <article className="bullet-card" key={item}>
+                    <span className="bullet-dot" aria-hidden="true" />
+                    <p>{item}</p>
+                  </article>
+                ))}
+              </div>
+            </article>
+
+            <article className="audience-panel audience-panel-soft" id="service-area">
+              <div className="section-heading compact-heading">
+                <p className="eyebrow">พื้นที่ให้บริการ</p>
+                <h2>บริการคาลิเบรตหน้าจอในหาดใหญ่ สงขลา และพื้นที่ใกล้เคียงในภาคใต้</h2>
+                <p>เหมาะสำหรับลูกค้าในหาดใหญ่และพื้นที่ใกล้เคียงที่ต้องการนัดคิวสะดวก พูดคุยรายละเอียดได้ง่าย และใช้บริการได้ใกล้ตัว</p>
+              </div>
+              <div className="service-area-list">
+                {serviceAreaItems.map((item) => (
+                  <span className="area-chip" key={item}>
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </article>
           </div>
         </section>
 
@@ -543,7 +805,13 @@ function App() {
 
             <div className="equipment-visual reveal reveal-delay-2">
               <div className="equipment-visual-card">
-                <img src={photo2} alt={CALIBRATOR_NAME} className="equipment-image" />
+                <img
+                  src={photo2}
+                  alt="อุปกรณ์ Calibrite Display Plus HL สำหรับคาลิเบรตหน้าจอ"
+                  className="equipment-image"
+                  loading="lazy"
+                  decoding="async"
+                />
               </div>
             </div>
           </div>
@@ -561,8 +829,8 @@ function App() {
 
           <div className="container why-shell reveal">
             <div className="why-copy">
-              <p className="eyebrow">ทำไมเราเลือกใช้รุ่นนี้</p>
-              <h2>ช่วยให้ผลลัพธ์นิ่งขึ้น และเชื่อถือได้มากขึ้น</h2>
+              <p className="eyebrow">ทำไมฮาร์ดแวร์คาลิเบรตจึงสำคัญ</p>
+              <h2>การวัดจริงเชื่อถือได้กว่าการปรับสีด้วยตา</h2>
               <div className="bullet-grid compact-grid">
                 {reasonItems.map((item, index) => (
                   <article className={`bullet-card reveal reveal-delay-${(index % 3) + 1}`} key={item}>
@@ -573,7 +841,13 @@ function App() {
               </div>
             </div>
             <div className="support-visual">
-              <img src={photo3} alt="บรรยากาศการบริการและอุปกรณ์คาลิเบรต" className="support-image reveal reveal-delay-2" />
+              <img
+                src={photo3}
+                alt="บรรยากาศการให้บริการคาลิเบรตหน้าจอในหาดใหญ่"
+                className="support-image reveal reveal-delay-2"
+                loading="lazy"
+                decoding="async"
+              />
             </div>
           </div>
         </section>
@@ -581,9 +855,9 @@ function App() {
         <section className="section" id="process">
           <div className="container reveal">
             <div className="section-heading">
-              <p className="eyebrow">Calibrite Display Plus HL ทำงานอย่างไร</p>
-              <h2>ขั้นตอนชัด ใช้เวลาไม่นาน และพร้อมใช้งานทันที</h2>
-              <p>ออกแบบกระบวนการให้เข้าใจง่าย เห็นผลจริง และเหมาะกับจอเดียวจนถึงหลายจอ</p>
+              <p className="eyebrow">ขั้นตอนการคาลิเบรต</p>
+              <h2>รู้ขั้นตอนก่อนนัดคิวได้ง่าย และคาดหวังผลลัพธ์ได้ชัดเจน</h2>
+              <p>เหมาะกับคนที่อยากรู้ว่าคาลิเบรตหน้าจอใช้เวลานานไหม และหลังทำแล้วได้อะไรกลับไปใช้งานจริง</p>
             </div>
 
             <div className="process-grid compact-grid">
@@ -598,8 +872,9 @@ function App() {
 
             <div className="outcome-panel reveal reveal-delay-2">
               <div className="outcome-copy">
-                <p className="eyebrow">คาลิเบรตแล้วดียังไง</p>
-                <h2>สีจอตรงขึ้น ทำงานมั่นใจขึ้น และใช้งานสบายขึ้นทุกวัน</h2>
+                <p className="eyebrow">คาลิเบรตหน้าจอช่วยอะไร</p>
+                <h2>หลังคาลิเบรตแล้วจะได้หน้าจอที่เชื่อถือได้มากขึ้นและใช้งานง่ายขึ้นทันที</h2>
+                <p>ช่วยลดเวลาปรับจอเอง ทำให้ภาพบนจอดูนิ่งขึ้น และเหมาะกับทั้งงานจริงจังกับการใช้งานทุกวัน</p>
               </div>
               <div className="outcome-grid">
                 {outcomeItems.map((item) => (
@@ -616,18 +891,18 @@ function App() {
         <section className="section section-dark" id="pricing">
           <div className="container reveal">
             <div className="section-heading section-heading-dark">
-              <p className="eyebrow">ราคา</p>
-              <h2>แพ็กเกจอ่านง่าย เลือกตามจำนวนจอได้ทันที</h2>
-              <p>เหมาะกับทั้งผู้ใช้จอเดียว จอคู่ และงานหลายจอ พร้อมโปรโมชันสำหรับการคาลิเบรตรอบถัดไป</p>
+              <p className="eyebrow">คาลิเบรตจอราคาเท่าไร</p>
+              <h2>แพ็กเกจคาลิเบรตหน้าจอในหาดใหญ่ เริ่มต้น 490 บาท</h2>
+              <p>เลือกตามจำนวนจอได้ง่าย ทั้ง 1 จอ 2 จอ 3 จอ และ notebook + จอนอก พร้อมสอบถามงานหลายจอหรือใช้งานในบริษัทได้</p>
             </div>
 
             <div className="promo-strip reveal reveal-visible">
               <div>
                 <span className="promo-strip-label">โปรโมชั่น</span>
-                <strong>กลับมาคาลิเบรตอีกครั้งหลัง 3 เดือน ลด 50%</strong>
+                <strong>คาลิเบรตรอบถัดไปหลัง 3 เดือน ลด 50% 1 ครั้ง</strong>
               </div>
               <a className="button button-primary" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
-                สอบถามโปรโมชัน
+                สอบถาม / ติดต่อผ่าน Facebook
               </a>
             </div>
 
@@ -637,7 +912,10 @@ function App() {
                   className={`price-card reveal reveal-delay-${(index % 3) + 1} ${item.featured ? 'price-card-featured' : ''}`}
                   key={item.title}
                 >
-                  <p className="price-title">{item.title}</p>
+                  <div className="price-head">
+                    <p className="price-title">{item.title}</p>
+                    {item.tag ? <span className={`price-badge ${item.featured ? 'price-badge-featured' : ''}`}>{item.tag}</span> : null}
+                  </div>
                   <div className="price-value">{item.price}</div>
                   <p className="price-detail">{item.detail}</p>
                   <a className="button button-secondary button-full" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
@@ -652,14 +930,64 @@ function App() {
         <section className="section section-soft" id="trust">
           <div className="container reveal">
             <div className="section-heading">
-              <p className="eyebrow">จุดเด่น / ความน่าเชื่อถือ</p>
-              <h2>บริการที่ดูโปร ใช้งานจริง และเหมาะกับคนที่ต้องการผลลัพธ์ชัดเจน</h2>
-              <p>รวมเหตุผลที่ทำให้บริการนี้เหมาะกับผู้ใช้จอคอม โน้ตบุ๊ก และหลายจอในชีวิตจริง</p>
+              <p className="eyebrow">ทำไมเลือกใช้บริการนี้</p>
+              <h2>รวมเหตุผลที่ทำให้บริการคาลิเบรตจอในหาดใหญ่คุ้มค่าและน่าเชื่อถือ</h2>
+              <p>ทั้งเรื่องอุปกรณ์เฉพาะทาง การรองรับหลายประเภทจอ ราคาเริ่มต้นชัดเจน และการติดต่อที่ไม่ซับซ้อน</p>
             </div>
 
-            <div className="trust-grid compact-grid">
-              {confidenceItems.map((item, index) => (
-                <article className={`trust-card reveal reveal-delay-${(index % 3) + 1}`} key={item}>
+            <div className="trust-shell">
+              <div className="trust-grid compact-grid">
+                {uspItems.map((item, index) => (
+                  <article className={`trust-card reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
+                    <span className="trust-mark" aria-hidden="true" />
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                  </article>
+                ))}
+              </div>
+
+              <aside className="trust-panel reveal reveal-delay-2">
+                <p className="eyebrow">ความน่าเชื่อถือ</p>
+                <h3>ติดต่อได้ง่าย เข้าใจง่าย และเหมาะกับการใช้งานจริง</h3>
+                <div className="trust-panel-list">
+                  {confidenceItems.map((item) => (
+                    <article className="trust-panel-item" key={item.title}>
+                      <span className="trust-mark" aria-hidden="true" />
+                      <div>
+                        <strong>{item.title}</strong>
+                        <p>{item.description}</p>
+                      </div>
+                    </article>
+                  ))}
+                </div>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section className="section section-dark contact-section" id="contact">
+          <div className="container contact-shell reveal">
+            <div className="contact-copy">
+              <p className="eyebrow">จองคิว / ติดต่อผ่าน Facebook หรือ Instagram</p>
+              <h2>ส่งรุ่นจอเพื่อประเมินราคาและนัดคิวได้ง่าย เหมาะกับลูกค้าในหาดใหญ่และพื้นที่ใกล้เคียง</h2>
+              <p>
+                เหมาะสำหรับคนที่กำลังมองหาบริการคาลิเบรตหน้าจอในหาดใหญ่ สงขลา และพื้นที่ใกล้เคียง
+                ไม่จำเป็นต้องมีความรู้เทคนิคมาก่อนก็คุยรายละเอียดและเลือกแพ็กเกจที่เหมาะได้
+              </p>
+            </div>
+
+            <div className="contact-actions contact-actions-compact">
+              <a className="button button-primary" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
+                จองคิว / ติดต่อผ่าน Facebook
+              </a>
+              <a className="button button-secondary" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
+                ส่งรุ่นจอผ่าน Instagram
+              </a>
+            </div>
+
+            <div className="contact-note-list">
+              {reassuranceItems.map((item) => (
+                <article className="contact-note" key={item}>
                   <span className="trust-mark" aria-hidden="true" />
                   <p>{item}</p>
                 </article>
@@ -671,38 +999,38 @@ function App() {
         <section className="section" id="faq">
           <div className="container reveal">
             <div className="section-heading">
-              <p className="eyebrow">AEO / FAQ</p>
-              <h2>คำตอบสั้น ๆ ที่ช่วยให้เข้าใจบริการได้เร็วขึ้น</h2>
-              <p>จัดวางให้เบา อ่านง่าย และไม่ยัดแน่นเกินไปทั้งบนมือถือและเดสก์ท็อป</p>
-            </div>
-
-            <div className="answer-grid compact-grid answer-grid-compact">
-              {aeoItems.map((item, index) => (
-                <article className={`answer-card reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                </article>
-              ))}
+              <p className="eyebrow">FAQ</p>
+              <h2>คำถามที่พบบ่อยเกี่ยวกับคาลิเบรตหน้าจอ ราคา เวลา และการรองรับอุปกรณ์</h2>
+              <p>รวมคำตอบที่ตรงกับคำค้นจริง เช่น คาลิเบรตหน้าจอช่วยอะไร ราคาเริ่มต้นเท่าไร ใช้เวลานานไหม และใช้กับ Windows, Mac หรือ MacBook ได้ไหม</p>
             </div>
 
             <div className="faq-list faq-list-compact">
               {faqItems.map((item, index) => {
                 const isOpen = openFaq === index;
+                const panelId = `faq-panel-${index}`;
+                const buttonId = `faq-trigger-${index}`;
 
                 return (
                   <article className={`faq-item reveal reveal-delay-${(index % 3) + 1}`} key={item.question}>
                     <button
                       type="button"
+                      id={buttonId}
                       className={`faq-trigger ${isOpen ? 'faq-trigger-open' : ''}`}
                       onClick={() => setOpenFaq(isOpen ? -1 : index)}
                       aria-expanded={isOpen}
+                      aria-controls={panelId}
                     >
                       <span>{item.question}</span>
                       <span className="faq-icon" aria-hidden="true">
                         {isOpen ? '−' : '+'}
                       </span>
                     </button>
-                    <div className={`faq-panel ${isOpen ? 'faq-panel-open' : ''}`}>
+                    <div
+                      id={panelId}
+                      role="region"
+                      aria-labelledby={buttonId}
+                      className={`faq-panel ${isOpen ? 'faq-panel-open' : ''}`}
+                    >
                       <p>{item.answer}</p>
                     </div>
                   </article>
@@ -711,34 +1039,15 @@ function App() {
             </div>
           </div>
         </section>
-
-        <section className="section section-dark contact-section" id="contact">
-          <div className="container contact-shell reveal">
-            <div className="contact-copy">
-              <p className="eyebrow">ติดต่อเรา</p>
-              <h2>ทักแชทผ่าน Facebook หรือ Instagram เพื่อสอบถามราคา นัดคิว และเช็กพื้นที่ให้บริการได้เลย</h2>
-              <p>พร้อมคุยรายละเอียดจำนวนจอ รุ่นจอ และช่วงเวลาที่สะดวกแบบตรงไปตรงมา</p>
-            </div>
-
-            <div className="contact-actions contact-actions-compact">
-              <a className="button button-primary" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
-                จองคิว / ติดต่อผ่าน Facebook
-              </a>
-              <a className="button button-secondary" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
-                Instagram
-              </a>
-            </div>
-          </div>
-        </section>
       </main>
 
       <footer className="footer">
         <div className="container footer-inner">
           <div className="footer-brand">
-            <img src={logoImg} alt={BRAND_NAME} className="footer-logo" />
+            <img src={logoImg} alt="โลโก้ Hatyai Color Calibrate - HCC" className="footer-logo" />
             <div>
               <strong>{BRAND_NAME}</strong>
-              <p>หาดใหญ่ ประเทศไทย</p>
+              <p>หาดใหญ่ สงขลา ประเทศไทย</p>
             </div>
           </div>
 

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Update the sitemap domain if you publish on a custom domain.
+Sitemap: https://yourdomain.com/sitemap.xml
