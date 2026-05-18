@@ -17,7 +17,7 @@ function HeroSection() {
           <div className="hero-copy-shell">
             <span className="section-badge">รับคาลิเบรตหน้าจอในหาดใหญ่</span>
             <p className="hero-promo">คาลิเบรตรอบถัดไปหลัง 3 เดือน ลด 50%</p>
-            <h1>
+            <h1 className="hero-title">
               <span>บริการคาลิเบรตหน้าจอในหาดใหญ่</span>
               <span>สีตรงขึ้น ใช้งานมั่นใจขึ้น</span>
             </h1>
@@ -26,14 +26,14 @@ function HeroSection() {
               เพื่อให้สีตรงขึ้น ลดความเพี้ยน และช่วยให้คุณทำงานหรือใช้งานทั่วไปได้มั่นใจขึ้น
             </p>
 
-            <div className="hero-actions">
+            <div className="hero-actions hero-actions-primary">
               <a className="button button-primary" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
                 ทักสอบถามผ่าน Facebook
               </a>
               <a className="button button-secondary" href="#pricing">
                 ดูแพ็กเกจราคา
               </a>
-              <a className="button button-ghost" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
+              <a className="button button-ghost hero-social-cta" href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
                 Instagram
               </a>
             </div>
@@ -63,6 +63,18 @@ function HeroSection() {
                   {item}
                 </span>
               ))}
+            </div>
+
+            <div className="hero-quick-cta-rail" aria-label="ช่องทางดำเนินการด่วน">
+              <a className="hero-quick-cta" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
+                ส่งรูปหน้าจอเพื่อประเมิน
+              </a>
+              <a className="hero-quick-cta" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
+                จองคิว Calibrate
+              </a>
+              <a className="hero-quick-cta" href={FACEBOOK_URL} target="_blank" rel="noreferrer">
+                ขอใบเสนอราคาองค์กร
+              </a>
             </div>
           </div>
         </div>
