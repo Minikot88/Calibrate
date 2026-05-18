@@ -13,9 +13,9 @@ function ProcessSection() {
           </p>
         </div>
 
-        <div className="process-grid">
+        <div className="process-grid process-grid-equal">
           {processItems.map((item, index) => (
-            <article className={`process-card reveal reveal-delay-${(index % 3) + 1}`} key={item.step}>
+            <article className={`process-card process-card-equal reveal reveal-delay-${(index % 3) + 1}`} key={item.step}>
               <span className="process-step">{item.step}</span>
               <h3>{item.title}</h3>
               <p>{item.description}</p>

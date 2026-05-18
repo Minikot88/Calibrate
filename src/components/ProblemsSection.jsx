@@ -14,9 +14,9 @@ function ProblemsSection() {
           </p>
         </div>
 
-        <div className="feature-grid">
+        <div className="feature-grid feature-grid-equal">
           {problemItems.map((item, index) => (
-            <article className={`feature-card reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
+            <article className={`feature-card feature-card-equal reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </article>

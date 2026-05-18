@@ -13,9 +13,12 @@ function DeviceSection() {
             จึงเหมาะกับทั้งจอแต่งภาพ จอเกมมิ่ง จอคอมทั่วไป และชุดหลายจอ
           </p>
 
-          <div className="equipment-spec-grid">
+          <div className="equipment-spec-grid equipment-spec-grid-equal">
             {deviceSpecs.map((item, index) => (
-              <article className={`equipment-spec-card reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
+              <article
+                className={`equipment-spec-card equipment-spec-card-equal reveal reveal-delay-${(index % 3) + 1}`}
+                key={item.title}
+              >
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </article>

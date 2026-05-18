@@ -14,9 +14,9 @@ function AnswersSection() {
           </p>
         </div>
 
-        <div className="feature-grid feature-grid-four">
+        <div className="feature-grid feature-grid-four feature-grid-equal">
           {overviewCards.map((item, index) => (
-            <article className={`feature-card reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
+            <article className={`feature-card feature-card-equal reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
               <h3>{item.title}</h3>
               <p>{item.description}</p>
             </article>

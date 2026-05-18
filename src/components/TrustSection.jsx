@@ -13,9 +13,9 @@ function TrustSection() {
             ทั้งเรื่องสี ความสบายตา และความมั่นใจเวลาใช้งาน
           </p>
 
-          <div className="feature-grid feature-grid-two">
+          <div className="feature-grid feature-grid-two feature-grid-equal">
             {benefitItems.map((item, index) => (
-              <article className={`feature-card reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
+              <article className={`feature-card feature-card-equal reveal reveal-delay-${(index % 3) + 1}`} key={item.title}>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
               </article>
